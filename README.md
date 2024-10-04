@@ -1,3 +1,4 @@
+
 Система запускается по расписанию - раз в минуту.  Период запуска указывается в настройках - app.properties. 
 
 Первый сайт будет career.habr.com. Работаем с разделом https://career.habr.com/vacancies/java_developer.  
