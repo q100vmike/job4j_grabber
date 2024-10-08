@@ -15,6 +15,7 @@ class HabrCareerDateTimeParserTest {
         LocalDateTime result = parser.parse(input);
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     public void formatDateTime2isTrue() {
         HabrCareerDateTimeParser parser = new HabrCareerDateTimeParser();
@@ -23,6 +24,7 @@ class HabrCareerDateTimeParserTest {
         LocalDateTime result = parser.parse(input);
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     public void formatDateTime3isTrue() {
         HabrCareerDateTimeParser parser = new HabrCareerDateTimeParser();
