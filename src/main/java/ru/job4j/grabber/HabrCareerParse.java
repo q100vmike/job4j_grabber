@@ -16,14 +16,16 @@ public class HabrCareerParse {
     public static final int PAGES = 5;
 
     private static String retrieveDescription(String link) {
+        String description = "";
         try {
             Connection connection = Jsoup.connect(link);
             Document document = connection.get();
             Elements rows = document.select(".faded-content__container");
-            return rows.text();
+            description = rows.text();
         } catch (IOException e) {
-            return "No Connection";
+            e.printStackTrace();
         }
+        return description;
     }
 
     public static void main(String[] args) throws IOException {
